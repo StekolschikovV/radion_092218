@@ -1,0 +1,22 @@
+.col.film
+    .row
+        .col-md-8.player
+            img(src='./img/playerBg.png')
+        .col-md-4.mind(style="background-image: url(./img/bg.png)") 
+            .title title
+            .time time
+            button.btn(type='button')
+                | Смотреть
+        .col-md-12.tabs
+            ul.nav.nav-tabs(role='tablist')
+                li.nav-item
+                    a.nav-link.active.show(href='#s1', role='tab', data-toggle='tab') 1 сезон
+                li.nav-item
+                    a.nav-link(href='#s2', role='tab', data-toggle='tab') 2 сезон
+                li.nav-item
+                    a.nav-link(href='#s3', role='tab', data-toggle='tab') 3 сезон
+                // Tab panes
+            .tab-content
+                #s1.tab-pane.fade.in.active.show(role='tabpanel') ...
+                #s2.tab-pane.fade(role='tabpanel') bbb
+                #s3.tab-pane.fade(role='tabpanel') ccc
