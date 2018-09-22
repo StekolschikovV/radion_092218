@@ -1,19 +1,15 @@
-nav.navbar.navbar-expand-md.navbar-fixed-top.navbar-dark.bg-dark.main-nav
-  .container
-    ul.nav.navbar-nav
-      li.nav-item.active
-        a.nav-link(href='#') Home
-      li.nav-item
-        a.nav-link(href='#') Download
-      li.nav-item
-        a.nav-link(href='#') Register
+nav.navbar.navbar-expand-lg
+  a.navbar-brand(href='#') 
+    img(src="./img/logo.png", alt="logo")
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+      i.fas.fa-bars
+  #navbarSupportedContent.collapse.navbar-collapse
     ul.nav.navbar-nav.mx-auto
       li.nav-item
-        a.nav-link(href='#') Website Name
-    ul.nav.navbar-nav
-      li.nav-item
-        a.nav-link(href='#') Rates
-      li.nav-item
-        a.nav-link(href='#') Help
-      li.nav-item
-        a.nav-link(href='#') Contact
+        a.nav-link(href='#') Мультфильмы
+    form.form-inline.my-1.my-lg-0
+      input.form-control.mr-sm-1(placeholder='Поиск по сайту')
+      i.fas.fa-search
+    form.form-inline.my-1.my-lg-0
+      a(href='#') Профиль

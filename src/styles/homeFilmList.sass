@@ -1,0 +1,85 @@
+.homeFilmList
+    background: white
+    .el
+        margin-top: 1em
+        margin-bottom: 1em
+        position: relative
+        .decor
+            .top
+                left: 0
+                right: 0
+                margin: auto
+                top: -1em
+            .right
+                right: -1em
+                top: -1em
+            .left
+                left: -1em
+                top: -1em 
+            .leftC
+                margin: auto
+                top: 0
+                bottom: 0
+                left: -1em
+            .rightC
+                margin: auto
+                top: 0
+                bottom: 0
+                right: -1em
+            .bottom
+                left: 0
+                right: 0
+                margin: auto
+                top: calc(100% - 1em)
+                width: 2.5em !important
+            .minL1, .minL2, .minL3, .minL4, .minR1, .minR2, .minR3, .minR4
+                left: 2%
+                width: 1em !important
+                height: 1em !important
+                margin: auto
+                top: calc(100% - .8em)
+                background: white !important
+            .minR1
+                left: 61% 
+            .minR2
+                left: 71%
+            .minR3
+                left: 81%
+            .minR4
+                left: 91%
+            .minL2
+                left: 12% 
+            .minL3
+                left: 22%
+            .minL4
+                left: 32%
+            .top, .left, .right, .leftC, .rightC, .bottom, .minL1, .minL2, .minL3, .minL4, .minR1, .minR2, .minR3, .minR4
+                width: 2em
+                height: 2em
+                background: white
+                border-radius: 50%
+                position: absolute
+                z-index: 3
+        .info
+            padding-top: 35px
+            position: absolute
+            top: calc(100% - 150px)
+            left: 0
+            height: 145px
+            overflow: hidden
+            background: linear-gradient(rgba(255,0,0,.0), $dark 30%)
+            width: 100% 
+            padding-left: 5%
+            .title
+                font-weight: bold
+                margin-top: 30px
+                color: white
+            .text
+                font-size: 0.8em
+                color: lighten($dark, 40%)
+        img
+            padding-bottom: 25px
+            max-width: calc(100% - 2px)
+            min-width: calc(100% - 2px)
+
+        // background: red

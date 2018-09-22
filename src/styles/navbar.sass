@@ -1,9 +1,8 @@
 @import "./const.sass"
-*
-    outline: none !important
-    text-decoration: none !important
+
 
 nav
+    border-bottom: 5px solid $purple
     background: $dark
     button.navbar-toggler
         border: 1px solid lighten($dark, 10%) 
@@ -35,6 +34,8 @@ nav
             color: white !important
     form
         position: relative
+        a
+            font-weight: bold
         i
             position: absolute
             right: 20px
