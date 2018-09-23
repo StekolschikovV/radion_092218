@@ -4,6 +4,23 @@
 nav
     border-bottom: 5px solid $purple
     background: $dark
+    .nav
+      position: relative
+      #filmListBtn.show
+        background: black
+      ul.show
+        display: block
+      ul
+        display: none
+        position: absolute
+        right: 0
+        top: 50px
+        z-index: 4
+        list-style: none
+        li
+          margin-bottom: .5em
+          background: black
+
     button.navbar-toggler
         border: 1px solid lighten($dark, 10%) 
         span 

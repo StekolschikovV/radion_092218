@@ -34,6 +34,37 @@ var Search = {
 
 }
 
+var FilmList = {
+
+    btn: document.querySelector('#filmListBtn'),
+    list: document.querySelector('#filmList'),
+    status: false,
+
+    start(){
+        this.event();
+    },
+
+    event(){
+        this.btn.addEventListener('click', () => {
+            this.status = !this.status;
+            this.showHide();
+        })
+    },
+
+    showHide(){
+        // console.log(this.status)
+        // if(this.status){
+        //     this.list.classList.add('show');
+        // } else {
+        //     this.list.classList.remove('show');
+        // }
+        this.list.classList.toggle('show');
+        this.btn.classList.toggle('show');
+    }
+
+};
+
 document.addEventListener("DOMContentLoaded", function () {
     Search.start();
+    FilmList.start();
 });

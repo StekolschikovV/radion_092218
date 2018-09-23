@@ -5,6 +5,10 @@ mixin searchEl
       .title Мстители
       .text Описание
 
+mixin navLink
+  li.nav-item
+    a.nav-link(href='#') Мультфильмы
+
 nav.navbar.navbar-expand-lg
   a.navbar-brand(href='#') 
     img(src="./img/logo.png", alt="logo")
@@ -13,8 +17,13 @@ nav.navbar.navbar-expand-lg
       i.fas.fa-bars
   #navbarSupportedContent.collapse.navbar-collapse
     ul.nav.navbar-nav.mx-auto
-      li.nav-item
+      li#filmListBtn.nav-item
         a.nav-link(href='#') Мультфильмы
+      ul#filmList
+        +navLink
+        +navLink
+        +navLink
+        +navLink
     form.form-inline.my-1.my-lg-0
       input#search-input.form-control.mr-sm-1(placeholder='Поиск по сайту')
       i.fas.fa-search
