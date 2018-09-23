@@ -1,0 +1,22 @@
+mixin comment
+    .el
+        img(src="https://vignette.wikia.nocookie.net/mapping1227/images/7/73/%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B0.png/revision/latest?cb=20171021053152&path-prefix=ru")
+        .right
+            .name Наталья
+            .date 7 июня
+            .text We've created a very simple fluid grid, based on 960px. Operations in Sass let us do something like take pixel values and convert them to percentages without much hassle.
+.col.comment
+    .row
+        .col-md-12.add
+            .title напишите комментарий
+            .text "Тут іде текст. Тут іде текст." Це робить текст схожим на оповідний.
+            br
+            .text Комментарий
+                span.redText *
+            textarea
+        .col-md-12.text-right
+            button.btn.blue Оставить комментарий
+        .col-md-12.list
+            +comment
+            +comment
+            +comment
