@@ -1,3 +1,10 @@
+mixin searchEl
+  li
+    img(src="https://www.kinonews.ru/insimgs/2018/newsimg/newsimg79007.jpg")
+    .right
+      .title Мстители
+      .text Описание
+
 nav.navbar.navbar-expand-lg
   a.navbar-brand(href='#') 
     img(src="./img/logo.png", alt="logo")
@@ -9,7 +16,13 @@ nav.navbar.navbar-expand-lg
       li.nav-item
         a.nav-link(href='#') Мультфильмы
     form.form-inline.my-1.my-lg-0
-      input.form-control.mr-sm-1(placeholder='Поиск по сайту')
+      input#search-input.form-control.mr-sm-1(placeholder='Поиск по сайту')
       i.fas.fa-search
+      ul.searchMenu
+        +searchEl
+        +searchEl
+        +searchEl
+        +searchEl
+        +searchEl
     form.form-inline.my-1.my-lg-0
       a(href='#') Профиль
