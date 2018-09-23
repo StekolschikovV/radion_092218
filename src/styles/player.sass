@@ -1,23 +1,103 @@
 .film
-    .player
-        padding: 0
-        img
-            width: 100%
-    .mind
-        padding: 2em
-        display: flex
-        align-items: center
-        justify-content: center
-        flex-direction: column
-        .title
-            font-size: 1.5em
-            color: white
-        .time
-            font-size: 1em
-            color: white
-            text-decoration: underline !important
-        button
-            margin-top: 2em
-    .tabs
-        padding: 0
+  .player
+    padding: 0
+    img
+      width: 100%
+  .mind
+    padding: 2em
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    .title
+      font-size: 1.5em
+      color: white
+    .time
+      font-size: 1em
+      color: white
+      text-decoration: underline !important
+    button
+      margin-top: 2em
+  .tabs
+    padding: 0
 
+.tabs
+  background: white
+  li
+    a
+      border: 0 !important
+      border-radius: 0 !important
+      color: $dark
+      font-weight: bold
+      text-transform: uppercase
+    .active
+      background: transparent !important
+      color: $blue !important
+  .nav-tabs
+    border: none
+  .tab-pane
+    display: none
+  .show.tab-pane
+    //background: red
+    overflow-x:  scroll !important
+    display: flex
+    flex-direction: row
+    .filmLink
+      cursor: pointer
+      min-width: 100px
+      max-width: 100px
+      margin: 0em .5em 0 1em
+      .title
+        color: lighten($blue, 10%)
+      img
+        width: 100%
+
+.info
+  padding-top: 1em
+  padding-bottom: 1em
+  background: white
+  .rating
+    display: flex
+    .left
+      .star
+        i
+          color: lighten($dark, 20%)
+          cursor: pointer
+        .selected
+          color: $orange
+      .views
+        color:  lighten($dark, 20%)
+        font-size: .8em
+    .right
+      background: $orange
+      border-radius: 50%
+      min-height: 50px
+      max-height: 50px
+      min-width: 50px
+      max-width: 50px
+      padding: 13px
+      color: white
+      font-weight: bold
+  .watching
+    color:  lighten($dark, 20%)
+    font-size: .8em
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    span
+      padding-left: 5px
+      font-size: 1.5em
+      color: $orange
+      font-weight: bold
+  .share
+    text-transform: uppercase
+    font-weight: bold
+    i
+      cursor: pointer
+      font-weight: lighter
+      padding: 5px
+      color: lighten($dark, 20%)
+      font-size: .8em
+      &:first-child
+        margin-left: 1em

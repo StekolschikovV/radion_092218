@@ -1,3 +1,7 @@
+mixin filmLink
+    .filmLink
+        img(src='https://aserialov.net/wp-content/uploads/2017/12/diagnoz-390x250.jpg')
+        .title Серия N
 .col.film
     .row
         .col-md-8.player
@@ -17,6 +21,53 @@
                     a.nav-link(href='#s3', role='tab', data-toggle='tab') 3 сезон
                 // Tab panes
             .tab-content
-                #s1.tab-pane.fade.in.active.show(role='tabpanel') ...
-                #s2.tab-pane.fade(role='tabpanel') bbb
-                #s3.tab-pane.fade(role='tabpanel') ccc
+                #s1.tab-pane.fade.in.active.show(role='tabpanel')
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                #s2.tab-pane.fade(role='tabpanel')
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                #s3.tab-pane.fade(role='tabpanel')
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+                    +filmLink
+
+
+
+        .col-md-3.info
+            .rating
+                .left
+                    .star
+                        i.fas.fa-star.selected
+                        i.fas.fa-star.selected
+                        i.fas.fa-star.selected
+                        i.fas.fa-star.selected
+                        i.fas.fa-star
+                    .views 133 просмотра
+                .right 4.2
+        .col-md-3.info
+            .watching сейчас смотрят:
+                span 255
+        .col-md-6.text-right.info
+            .share
+                | Поделиться
+                i.fab.fa-facebook-f
+                i.fab.fa-twitter
+                i.fab.fa-google-plus-g
