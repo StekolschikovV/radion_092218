@@ -32,14 +32,14 @@
       text-transform: uppercase
     .active
       background: transparent !important
-      color: $blue !important
+      +textBlueUp(1em)
   .nav-tabs
     border: none
   .tab-pane
     display: none
   .show.tab-pane
     //background: red
-    overflow-x:  scroll !important
+    overflow-x:  auto !important
     display: flex
     flex-direction: row
     .filmLink
@@ -66,8 +66,7 @@
         .selected
           color: $orange
       .views
-        color:  lighten($dark, 20%)
-        font-size: .8em
+        +textMin
     .right
       background: $orange
       border-radius: 50%
@@ -79,14 +78,14 @@
       color: white
       font-weight: bold
   .watching
-    color:  lighten($dark, 20%)
-    font-size: .8em
+    +textMin
     display: flex
     flex-direction: row
     justify-content: center
     align-items: center
     span
       padding-left: 5px
+      padding-top: 1em
       font-size: 1.5em
       color: $orange
       font-weight: bold
@@ -101,3 +100,12 @@
       font-size: .8em
       &:first-child
         margin-left: 1em
+.description
+  background: white
+  padding-bottom: 1em
+  hr
+    background: lighten($dark, 70%)
+  .title
+    +textBlueUp(1.5em)
+  .text
+    +textMin()
