@@ -26,7 +26,9 @@ var Search = {
     },
 
     show(){
-        this.menu.classList.add('show')
+        if(document.body.clientWidth > 995){
+            this.menu.classList.add('show')
+        }
     },
     hide(){
         this.menu.classList.remove('show')
@@ -52,14 +54,13 @@ var FilmList = {
     },
 
     showHide(){
-        // console.log(this.status)
-        // if(this.status){
-        //     this.list.classList.add('show');
-        // } else {
-        //     this.list.classList.remove('show');
-        // }
-        this.list.classList.toggle('show');
-        this.btn.classList.toggle('show');
+        if(document.body.clientWidth > 995) {
+            this.list.classList.toggle('show');
+            this.btn.classList.toggle('show');
+        } else {
+            this.list.classList.remove('show');
+            this.btn.classList.remove('show');
+        }
     }
 
 };
